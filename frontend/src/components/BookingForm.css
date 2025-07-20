@@ -1,0 +1,198 @@
+.booking-form-container {
+  padding: 40px 0;
+  min-height: calc(100vh - 80px);
+}
+
+.back-btn {
+  margin-bottom: 30px;
+}
+
+.booking-content {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.booking-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px 40px;
+}
+
+.booking-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.technician-summary {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.technician-thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.technician-summary h4 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.technician-summary p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 2px;
+}
+
+.rate {
+  font-weight: 600;
+  font-size: 16px !important;
+}
+
+.booking-form {
+  padding: 40px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.form-section h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form-row.three-col {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.form-help {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.cost-summary {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.cost-summary h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.cost-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cost-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.cost-item.total {
+  border-top: 2px solid #dee2e6;
+  margin-top: 10px;
+  padding-top: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #333;
+}
+
+.cost-note {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.form-actions {
+  text-align: center;
+}
+
+.submit-btn {
+  font-size: 18px;
+  padding: 15px 40px;
+  min-width: 250px;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .booking-form-container {
+    padding: 20px 0;
+  }
+
+  .booking-header {
+    padding: 20px;
+  }
+
+  .booking-header h2 {
+    font-size: 24px;
+  }
+
+  .technician-summary {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .booking-form {
+    padding: 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .form-row.three-col {
+    grid-template-columns: 1fr;
+  }
+
+  .submit-btn {
+    width: 100%;
+    min-width: auto;
+  }
+}
